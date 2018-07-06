@@ -1,0 +1,14 @@
+/**Created by Ken Chang 04/07/2018 for Pukunui Technology**/
+/**Ticket number PPZ-492782**/
+
+This codes will move the specific user from group1 to ngroup.
+(Follow the Setting steps for move group - PPZ-492782 groups conditions)
+
+To trigger it, admin user must put a csv file with specific form into this path /home/ken/moodledata/movegroup
+(Follow the profile_field_test8 - Copy format)
+After ran the schedule tasks or cron.php [Automated User Group Movement], the processed file will be move into this path /home/ken/moodledata/movegroup/processed
+
+This codes will auto delete the processed file when the modified date is bigger than the user chooses conditions.
+
+
+
